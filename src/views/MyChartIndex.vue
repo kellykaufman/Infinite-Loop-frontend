@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <h1>{{ message }}</h1>
+  <div class="chart-index">
+    <h1>{{ anxieties }}</h1>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 export default {
   data: function () {
     return {
-      message: "Welcome to Vue.js!",
+      anxieties: [],
     };
   },
   created: function () {},

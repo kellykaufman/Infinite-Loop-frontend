@@ -1,14 +1,17 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import MyChartIndex from "../views/MyChartIndex.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    component: Home,
+    //You declare this:
+    path: "/chart-index",
+    // Comes from class div:
+    name: "chart-index",
+    // This is the name of the file:
+    component: MyChartIndex,
   },
   {
     path: "/about",
