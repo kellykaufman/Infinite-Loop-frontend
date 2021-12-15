@@ -6,8 +6,8 @@
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
       <div>
-        <label>Name:</label>
-        <input type="text" v-model="newUserParams.name" />
+        <label>Full Name:</label>
+        <input type="text" v-model="newUserParams.full_name" />
       </div>
       <div>
         <label>Email:</label>
