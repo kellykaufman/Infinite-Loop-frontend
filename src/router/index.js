@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import MyChartIndex from "../views/MyChartIndex.vue";
 import Signup from "../views/Signup.vue";
+import Login from "../views/Login.vue";
 
 Vue.use(VueRouter);
 
@@ -14,6 +15,12 @@ const routes = [
     // This is the name of the file:
     component: Signup,
   },
+  {
+    path: "/login",
+    name: "login",
+    component: Login,
+  },
+
   {
     //You declare this:
     path: "/chart-index",

@@ -4,6 +4,7 @@
       <router-link to="/chart-index">My Chart</router-link> |
       <router-link to="/signup">Signup</router-link>
       |
+      <router-link to="/login">Login</router-link>
     </div>
     <router-view />
   </div>
