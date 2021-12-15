@@ -1,6 +1,8 @@
 <template>
   <div class="chart-index">
-    <h1>{{ anxieties }}</h1>
+    <div v-for="anxieties in anxieties" :key="anxieties.id">
+      {{ anxieties }}
+    </div>
   </div>
 </template>
 
