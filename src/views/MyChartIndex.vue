@@ -38,8 +38,10 @@
 
 <script>
 import axios from "axios";
+import Vue2Filters from "vue2-filters";
 
 export default {
+  mixins: [Vue2Filters.mixins],
   data: function () {
     return {
       anxieties: [],
@@ -61,8 +63,8 @@ export default {
       console.log("Making a new anxiety!");
       axios
         .post("/anxieties", this.anxiety)
-        .then(() => {
-          this.$router.push("/chart-index");
+        .then((response) => {
+          this.anxieties.push(response.data);
         })
         .catch((error) => {
           this.status = error.response.status;
