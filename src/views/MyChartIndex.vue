@@ -8,9 +8,28 @@
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
       <div>
-        <label>Life Theme: </label>
+        <label>Life theme: </label>
         <input type="text" v-model="anxiety.life_theme" />
       </div>
+
+      <div>
+        <label> Intrusive thought or feeling: </label>
+        <input type="text" v-model="anxiety.intrusive_thought_or_feeling" />
+      </div>
+      <div>
+        <label>Anxiety theme: </label>
+        <input type="text" v-model="anxiety.anxiety_theme" />
+      </div>
+      <div>
+        <label> Opposite Action: </label>
+        <input type="text" v-model="anxiety.opposite_action" />
+      </div>
+      <div>
+        <label>Timer: </label>
+        <input type="text" v-model="anxiety.timer" />
+      </div>
+      <!-- Do I add user_id ? -->
+      <input type="submit" value="Submit" />
     </form>
   </div>
 </template>
@@ -29,10 +48,10 @@ export default {
     };
   },
   created: function () {
-    this.anxietiesindex();
+    this.anxietiesIndex();
   },
   methods: {
-    anxietiesindex: function () {
+    anxietiesIndex: function () {
       axios.get("/anxieties").then((response) => {
         this.anxieties = response.data;
         console.log("All anxieties", this.anxieties);
@@ -43,7 +62,7 @@ export default {
       axios
         .post("/anxieties", this.anxiety)
         .then(() => {
-          this.$router.push("/anxieties");
+          this.$router.push("/chart-index");
         })
         .catch((error) => {
           this.status = error.response.status;
