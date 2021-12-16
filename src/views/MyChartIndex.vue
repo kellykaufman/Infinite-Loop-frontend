@@ -2,6 +2,8 @@
   <div class="chart-index">
     <div v-for="anxieties in anxieties" :key="anxieties.id">
       {{ anxieties }}
+
+      <button v-on:click="createanxiety">New Anxiety</button>
     </div>
   </div>
 </template>
@@ -15,6 +17,7 @@ export default {
   data: function () {
     return {
       anxieties: [],
+      anxiety: {},
     };
   },
   created: function () {
@@ -26,6 +29,18 @@ export default {
         this.anxieties = response.data;
         console.log("All anxieties", this.anxieties);
       });
+    },
+    createanxiety: function () {
+      console.log("Making a new anxiety!");
+      axios
+        .post("/anxieties", this.anxiety)
+        .then(() => {
+          this.$router.push("/anxieties");
+        })
+        .catch((error) => {
+          this.status = error.response.status;
+          console.log(error.response);
+        });
     },
   },
 };
