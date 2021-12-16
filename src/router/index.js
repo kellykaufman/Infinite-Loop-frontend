@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import MyChartIndex from "../views/MyChartIndex.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
+import Logout from "../views/Logout.vue";
 
 Vue.use(VueRouter);
 
@@ -10,7 +11,7 @@ const routes = [
   {
     //You declare this:
     path: "/signup",
-    // Comes from class div:
+    // Comes from div class:
     name: "signup",
     // This is the name of the file:
     component: Signup,
@@ -20,6 +21,8 @@ const routes = [
     name: "login",
     component: Login,
   },
+
+  { path: "/logout", name: "logout", component: Logout },
 
   {
     //You declare this:
