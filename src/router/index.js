@@ -4,6 +4,7 @@ import MyChartIndex from "../views/MyChartIndex.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
+import EditAnxieties from "../views/EditAnxieties.vue";
 
 Vue.use(VueRouter);
 
@@ -33,13 +34,12 @@ const routes = [
     component: MyChartIndex,
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    //You declare this:
+    path: "/edit-anxieties/:id",
+    // Comes from class div:
+    name: "edit-anxieties",
+    // This is the name of the file:
+    component: EditAnxieties,
   },
 ];
 

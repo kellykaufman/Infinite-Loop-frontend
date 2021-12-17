@@ -2,6 +2,9 @@
   <div class="chart-index">
     <div v-for="anxieties in anxieties" :key="anxieties.id">
       <div>{{ anxieties }}</div>
+      <router-link v-bind:to="`/edit-anxieties/${anxieties.id}`">
+        <button>Edit</button>
+      </router-link>
     </div>
     <form v-on:submit.prevent="createAnxiety()">
       <ul>
