@@ -1,7 +1,7 @@
 <template>
   <div class="chart-index">
     <div v-for="anxieties in anxieties" :key="anxieties.id">
-      {{ anxieties }}
+      <div>{{ anxieties }}</div>
     </div>
     <form v-on:submit.prevent="createAnxiety()">
       <ul>
@@ -9,24 +9,27 @@
       </ul>
       <div>
         <label>Life theme: </label>
-        <input type="text" v-model="anxiety.life_theme" />
+        <input type="text" v-model="newAnxietyParams.life_theme" />
       </div>
 
       <div>
         <label> Intrusive thought or feeling: </label>
-        <input type="text" v-model="anxiety.intrusive_thought_or_feeling" />
+        <input
+          type="text"
+          v-model="newAnxietyParams.intrusive_thought_or_feeling"
+        />
       </div>
       <div>
         <label>Anxiety theme: </label>
-        <input type="text" v-model="anxiety.anxiety_theme" />
+        <input type="text" v-model="newAnxietyParams.anxiety_theme" />
       </div>
       <div>
         <label> Opposite Action: </label>
-        <input type="text" v-model="anxiety.opposite_action" />
+        <input type="text" v-model="newAnxietyParams.opposite_action" />
       </div>
       <div>
         <label>Timer: </label>
-        <input type="text" v-model="anxiety.timer" />
+        <input type="text" v-model="newAnxietyParams.timer" />
       </div>
       <!-- Do I add user_id ? -->
       <input type="submit" value="Submit" />
@@ -45,7 +48,7 @@ export default {
   data: function () {
     return {
       anxieties: [],
-      anxiety: {},
+      newAnxietyParams: {},
       errors: [],
     };
   },
@@ -60,11 +63,11 @@ export default {
       });
     },
     createAnxiety: function () {
-      console.log("Making a new anxiety!");
       axios
-        .post("/anxieties", this.anxiety)
+        .post("/anxieties", this.newAnxietyParams)
         .then((response) => {
-          this.anxieties.push(response.data);
+          this.$router.go();
+          console.log("Making a new anxiety!", response.data);
         })
         .catch((error) => {
           this.status = error.response.status;
