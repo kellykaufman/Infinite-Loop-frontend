@@ -41,10 +41,10 @@
 
 <script>
 import axios from "axios";
-import Vue2Filters from "vue2-filters";
+// import Vue2Filters from "vue2-filters";
 
 export default {
-  mixins: [Vue2Filters.mixins],
+  // mixins: [Vue2Filters.mixins],
   data: function () {
     return {
       anxieties: [],

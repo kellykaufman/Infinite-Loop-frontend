@@ -4,7 +4,6 @@ import MyChartIndex from "../views/MyChartIndex.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
-import MyTrends from "../views/MyTrends.vue";
 
 Vue.use(VueRouter);
 
@@ -32,11 +31,6 @@ const routes = [
     name: "chart-index",
     // This is the name of the file:
     component: MyChartIndex,
-  },
-  {
-    path: "/my-trends",
-    name: "my-trends",
-    component: MyTrends,
   },
   {
     path: "/about",
