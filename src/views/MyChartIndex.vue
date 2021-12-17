@@ -74,6 +74,7 @@ export default {
           console.log(error.response);
         });
     },
+    editAnxiety: function () {},
   },
 };
 </script>
