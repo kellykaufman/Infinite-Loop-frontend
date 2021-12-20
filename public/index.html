@@ -1,17 +1,709 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html>
+
+<head>
+  <!--Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Title-->
+  <title>Fury - Bootstrap Theme For Complete landing solutions</title>
+
+  <!--Favicon-->
+  <link rel='icon' href='assets/img/favicon/favicon.ico' type='image/x-icon' />
+
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <!-- Icon fonts -->
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+  <link rel="stylesheet" href="assets/fonts/line-awesome/css/line-awesome.min.css">
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="assets/css/vendors.bundle.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header
+    class="site-header sh-onScroll-shrink sh-onScroll-bg-white sh-onScroll-text-dark sh-onScroll-navbar-toggler-dark fixed-top">
+    <nav class="site-nav container">
+      <div class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+          <img class="site-logo-default" src="assets/img/logo/logo-white.png" alt="Site Logo">
+          <img class="site-logo-inverse" src="assets/img/logo/logo-pink.png" alt="Site Logo">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#IDtoggleNavigation"
+          aria-controls="IDtoggleNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="hamburger hamburger--spin js-hamburger">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+        </button>
+        <div class="navbar-collapse collapse" id="IDtoggleNavigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown-megamenu">
+              <a class="nav-link dropdown-toggle" href="html/#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Home
+              </a>
+              <div class="dropdown-menu left-auto" style="max-width:450px;">
+                <div class="container-fluid">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 p-lg-4">
+                      <h6 class="text-dark mb-2">Creative</h6>
+                      <ul class="list-unstyled font-size-14">
+                        <li>
+                          <a href="html/index-creative-agency.html">Agency</a>
+                        </li>
+                        <li>
+                          <a href="html/index-creative-portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                          <a href="html/index-sass.html">SASS App</a>
+                        </li>
+                        <li>
+                          <a href="html/index-software.html">Software</a>
+                        </li>
+                        <li>
+                          <a href="html/index-seo.html">SEO</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 p-lg-4">
+                      <h6 class="text-dark mb-2">Landing</h6>
+                      <ul class="list-unstyled font-size-14">
+                        <li>
+                          <a href="html/index-app.html">Mobile App</a>
+                        </li>
+                        <li>
+                          <a href="html/index-event.html">Event</a>
+                        </li>
+                        <li>
+                          <a href="html/index-product.html">Product Launch</a>
+                        </li>
+                        <li>
+                          <a href="html/index-startup.html">Startup</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="html/#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a class="dropdown-menu-link" href="html/about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-menu-link" href="html/how-it-work.html">How it work</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="dropdown-menu-link dropdown-toggle" href="html/#">
+                      Portfolio
+                    </a>
+                    <div class="dropdown-menu">
+                      <ul class="list-unstyled">
+                        <li class="nav-item">
+                          <a class="dropdown-menu-link" href="html/portfolios.html">Portfolios</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="dropdown-menu-link" href="html/portfolio-details.html">Portfolio details</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="dropdown-menu-link dropdown-toggle" href="html/#">
+                      Jobs
+                    </a>
+                    <div class="dropdown-menu">
+                      <ul class="list-unstyled">
+                        <li class="nav-item">
+                          <a class="dropdown-menu-link" href="html/jobs.html">Open Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="dropdown-menu-link" href="html/jobs-details.html">Jobs details</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="dropdown-menu-link dropdown-toggle" href="html/#">
+                      Blog
+                    </a>
+                    <div class="dropdown-menu">
+                      <ul class="list-unstyled">
+                        <li class="nav-item">
+                          <a class="dropdown-menu-link" href="html/blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="dropdown-menu-link" href="html/blog-details.html">Blog details</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="dropdown-menu-link dropdown-toggle" href="html/#">
+                      User
+                    </a>
+                    <div class="dropdown-menu">
+                      <ul class="list-unstyled">
+                        <li class="nav-item">
+                          <a class="dropdown-menu-link" href="html/login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="dropdown-menu-link" href="html/signup.html">Sign up</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="dropdown-menu-link" href="html/profile.html">User profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="dropdown-menu-link" href="html/recover.html">Reset password</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-menu-link" href="html/terms-and-privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-menu-link" href="html/faq.html">FAQs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-menu-link" href="html/404.html">404</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-menu-link" href="html/contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-menu-link" href="html/coming-soon.html">Coming Soon</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="docs/alerts.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="docs/index.html">Documentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary-gradient btn-sm"
+                href="https://wrapbootstrap.com/theme/fury-multipurpose-landing-solutions-WB059347H?ref=echotheme">Buy
+                Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="min-vh-100 flex-center shape-container py-10"
+    style="background:linear-gradient(to right, #8c37c7, #4b3099) no-repeat;background-size:100%;">
+    <div class="container">
+      <div class="row text-center mt-lg-7">
+        <div class="col-12">
+          <h1 class="rtx-bold display-md-1 text-white mb-0">
+            <span>Fury is build for</span>
+            <span class="text-warning"
+              data-typed-text="SASS App, Agency, Portfolio, SEO, Starter, Software, Product, Event"></span><span
+              class="text-warning">|</span>
+          </h1>
+          <p class="font-size-22 text-white px-lg-5 mt-5 mb-6">
+            Fury is an elegant, modern and fully customizable App Landing, SaaS Landing, WebApp, SEO Landing, Startup
+            Landing & Product Landing Multi-Purpose HTML template
+          </p>
+          <div class="text-center">
+            <a href="#" class="btn btn-primary-gradient btn-pill width-12rem py-3 mx-2">Buy Now</a>
+            <a href="#" class="btn btn-white btn-pill width-12rem py-3 mx-2" data-scrollto="demo">
+              Explore Demos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-lg-7">
+        <div class="col-md-6 col-lg-3 mt-5">
+          <div class="text-center border p-4 rounded text-white">
+            <h2 class="text-white rtx-bold mb-2">
+              10+
+            </h2>
+            <p>
+              Unique Landing Demo
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mt-5">
+          <div class="text-center border p-4 rounded text-white">
+            <h2 class="text-white rtx-bold mb-2">
+              16+
+            </h2>
+            <p>
+              Creative Inner Pages
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mt-5">
+          <div class="text-center border p-4 rounded text-white">
+            <h2 class="text-white rtx-bold mb-2">
+              200+
+            </h2>
+            <p>
+              Reusable Elements
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mt-5">
+          <div class="text-center border p-4 rounded text-white">
+            <h2 class="text-white rtx-bold mb-2">
+              50+
+            </h2>
+            <p>
+              HTML Pages
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="py-9" id="demo">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="text-primary display-md-1 rtx-bold">10+</h2>
+          <h4 class="mb-4">
+            Unique Home Page Demos
+          </h4>
+          <div class="divider mx-auto"></div>
+          <p>
+            A great collection of beautiful landing page templates for your need.
+            <br>
+            Choose the best suitable landing pages and start customizing it.
+          </p>
+        </div>
+      </div>
+      <!-- END row-->
+    </div>
+    <!-- END container-->
+  </section>
+
+  <section class="py-8 bg-light-v3">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 mt-5">
+          <a href="html/index-creative-agency.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/index-agency.png" alt="">
+          </a>
+          <h4>
+            Creative Agency
+          </h4>
+        </div>
+        <div class="col-md-6 mt-5">
+          <a href="html/index-event.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/index-portfolio.png" alt="">
+          </a>
+          <h4>
+            Creative Portfolio
+          </h4>
+        </div>
+        <div class="col-md-6 mt-5">
+          <a href="html/index-app.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/index-app.png" alt="">
+          </a>
+          <h4>
+            Mobile App
+          </h4>
+        </div>
+        <div class="col-md-6 mt-5">
+          <a href="html/index-software.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/index-software.png" alt="">
+          </a>
+          <h4>
+            Software
+          </h4>
+        </div>
+        <div class="col-md-6 mt-5">
+          <a href="html/index-seo.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/index-seo.png" alt="">
+          </a>
+          <h4>
+            SEO Landing
+          </h4>
+        </div>
+        <div class="col-md-6 mt-5">
+          <a href="html/index-startup.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/index-startup.png" alt="">
+          </a>
+          <h4>
+            Agency Startup
+          </h4>
+        </div>
+        <div class="col-md-6 mt-5">
+          <a href="html/index-product.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/index-sass.png" alt="">
+          </a>
+          <h4>
+            SASS App
+          </h4>
+        </div>
+        <div class="col-md-6 mt-5">
+          <a href="html/index-event.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/index-event.png" alt="">
+          </a>
+          <h4>
+            Events
+          </h4>
+        </div>
+      </div>
+      <!-- END row-->
+    </div>
+    <!-- END container-->
+  </section>
+
+  <section class="py-8">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <h2 class="text-primary display-md-1 rtx-bold mb-2">200+</h2>
+          <h4 class="mb-4">
+            Reusable UI Blocks
+          </h4>
+          <div class="divider"></div>
+          <p>
+            Develop your pages by copy and pasting ready blocks. You need to build a unique website in minutes with zero
+            coding.
+          </p>
+        </div>
+        <div class="col-lg-7 mb-5">
+          <img src="assets/img/screenshot/sc-blocks.png" alt="">
+        </div>
+      </div>
+      <!-- END row-->
+    </div>
+    <!-- END container-->
+  </section>
+
+  <section class="py-8 bg-light-v3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="text-primary display-md-1 rtx-bold">50+</h2>
+          <h4 class="mb-4">
+            Creative Inner Pages
+          </h4>
+          <div class="divider mx-auto"></div>
+          <p>
+            With incredible set of pages, make beautiful and customized HTML
+            <br>
+            websites with highly useful features and functionalities without having
+            <br>
+            any design experience.
+          </p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-4 col-sm-6 mt-5">
+          <a href="html/about.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/about.png" alt="">
+          </a>
+          <h4>
+            About
+          </h4>
+        </div>
+        <!-- END col-lg-4 col-sm-6 mt-5-->
+        <div class="col-lg-4 col-sm-6 mt-5">
+          <a href="html/how-it-work.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/how-work.png" alt="">
+          </a>
+          <h4>
+            How It Work
+          </h4>
+        </div>
+        <!-- END col-lg-4 col-sm-6 mt-5-->
+        <div class="col-lg-4 col-sm-6 mt-5">
+          <a href="html/portfolios.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/portfolio.png" alt="">
+          </a>
+          <h4>
+            Portfolio
+          </h4>
+        </div>
+        <!-- END col-lg-4 col-sm-6 mt-5-->
+        <div class="col-lg-4 col-sm-6 mt-5">
+          <a href="html/portfolio-details.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/portfolio-details.png" alt="">
+          </a>
+          <h4>
+            Portfolio Details
+          </h4>
+        </div>
+        <!-- END col-lg-4 col-sm-6 mt-5-->
+        <div class="col-lg-4 col-sm-6 mt-5">
+          <a href="html/blog.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/blog.png" alt="">
+          </a>
+          <h4>
+            Blog
+          </h4>
+        </div>
+        <!-- END col-lg-4 col-sm-6 mt-5-->
+        <div class="col-lg-4 col-sm-6 mt-5">
+          <a href="html/contact.html" target="_blank">
+            <img class="box-shadow-v1 mb-4" src="assets/img/screenshot/contact.png" alt="">
+          </a>
+          <h4>
+            Contact
+          </h4>
+        </div>
+        <!-- END col-lg-4 col-sm-6 mt-5-->
+        <div class="col-12 mt-5">
+          <h4 class="text-primary">&amp; More</h4>
+        </div>
+      </div>
+      <!-- END row-->
+    </div>
+    <!-- END container-->
+  </section>
+
+  <section class="py-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="text-primary display-md-1 rtx-bold">8+</h2>
+          <h4 class="mb-4">
+            Header Varieties
+          </h4>
+          <div class="divider mx-auto"></div>
+          <p>
+            Develop your pages by copy and pasting ready blocks.
+            <br>
+            You need to build a unique website in minutes with zero coding.
+          </p>
+        </div>
+      </div>
+      <!-- END row -->
+      <div class="row text-center">
+        <div class="col-md-6 mt-5">
+          <img class="rounded box-shadow-v1 mb-4" src="assets/img/screenshot/gradient.jpg" alt="">
+          <h4>
+            Gradient
+          </h4>
+        </div>
+        <!-- END col-md-6 mt-5-->
+        <div class="col-md-6 mt-5">
+          <img class="rounded box-shadow-v1 mb-4" src="assets/img/screenshot/img_bg.jpg" alt="">
+          <h4>
+            Background Image
+          </h4>
+        </div>
+        <!-- END col-md-6 mt-5-->
+        <div class="col-md-6 mt-5">
+          <img class="rounded box-shadow-v1 mb-4" src="assets/img/screenshot/solid_color.jpg" alt="">
+          <h4>
+            Solid Color
+          </h4>
+        </div>
+        <!-- END col-md-6 mt-5-->
+        <div class="col-md-6 mt-5">
+          <img class="rounded box-shadow-v1 mb-4" src="assets/img/screenshot/typing.jpg" alt="">
+          <h4>
+            Typing Text
+          </h4>
+        </div>
+        <!-- END col-md-6 mt-5-->
+        <div class="col-md-6 mt-5">
+          <img class="rounded box-shadow-v1 mb-4" src="assets/img/screenshot/parallax.jpg" alt="">
+          <h4>
+            Parallax
+          </h4>
+        </div>
+        <!-- END col-md-6 mt-5-->
+        <div class="col-md-6 mt-5">
+          <img class="rounded box-shadow-v1 mb-4" src="assets/img/screenshot/video.jpg" alt="">
+          <h4>
+            Background Video
+          </h4>
+        </div>
+        <!-- END col-md-6 mt-5-->
+      </div>
+    </div>
+    <!-- END container-->
+  </section>
+
+  <section class="py-8 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-md-7">
+          <h2 class="text-center">
+            Template Features
+          </h2>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-md-7">
+          <div class="media">
+            <span class="iconbox iconbox-lg bg-primary-gradient mt-1">
+              <i class="las la-mobile la-2x text-white"></i>
+            </span>
+            <div class="media-body pl-3">
+              <h5 class="mb-2">
+                Fully Responsive
+              </h5>
+              <p>
+                Your website will work on any type device. even in 320px device
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END col-lg-4 col-md-6-->
+
+        <div class="col-lg-4 col-md-6 mb-md-7">
+          <div class="media">
+            <span class="iconbox iconbox-lg bg-primary-gradient mt-1">
+              <i class="las la-bell la-2x text-white"></i>
+            </span>
+            <div class="media-body pl-3">
+              <h5 class="mb-2">
+                Customizable
+              </h5>
+              <p>
+                You can easily read, edit, and write your own code, or change everything.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END col-lg-4 col-md-6-->
+
+        <div class="col-lg-4 col-md-6 mb-md-7">
+          <div class="media">
+            <span class="iconbox iconbox-lg bg-primary-gradient mt-1">
+              <i class="las la-adjust la-2x text-white"></i>
+            </span>
+            <div class="media-body pl-3">
+              <h5 class="mb-2">
+                UI Elements
+              </h5>
+              <p>
+                100+ unique eliments. so you have freedom to make any type of page
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END col-lg-4 col-md-6-->
+
+        <div class="col-lg-4 col-md-6 mb-md-7">
+          <div class="media">
+            <span class="iconbox iconbox-lg bg-primary-gradient mt-1">
+              <i class="las la-file-code la-2x text-white"></i>
+            </span>
+            <div class="media-body pl-3">
+              <h5 class="mb-2">
+                Clean Code
+              </h5>
+              <p>
+                You can find our code well organized, commented and readable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END col-lg-4 col-md-6-->
+
+        <div class="col-lg-4 col-md-6 mb-md-7">
+          <div class="media">
+            <span class="iconbox iconbox-lg bg-primary-gradient mt-1">
+              <i class="las la-life-ring la-2x text-white"></i>
+            </span>
+            <div class="media-body pl-3">
+              <h5 class="mb-2">
+                24/7 Support
+              </h5>
+              <p>
+                Top notch support team is available 24 hours a day, 7 days a week.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END col-lg-4 col-md-6-->
+
+        <div class="col-lg-4 col-md-6 mb-md-7">
+          <div class="media">
+            <span class="iconbox iconbox-lg bg-primary-gradient mt-1">
+              <i class="lab la-telegram-plane la-2x text-white"></i>
+            </span>
+            <div class="media-body pl-3">
+              <h5 class="mb-2">
+                Free Updates
+              </h5>
+              <p>
+                When you purchase this template, you'll freely receive future updates.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END col-lg-4 col-md-6-->
+
+      </div>
+      <!--END row-->
+    </div>
+    <!-- END container-->
+  </section>
+
+  <section class="py-8" style="
+	background: #8B3AC6;
+	background-image: -webkit-linear-gradient(left, #8B3AC6 0%, #4D3399 100%);
+	background-image: -o-linear-gradient(left, #8B3AC6 0%, #4D3399 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(#8B3AC6), to(#4D3399));
+	background-image: linear-gradient(to right, #8B3AC6 0%, #4D3399 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8B3AC6', endColorstr='#FF4D3399', GradientType=1);
+">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-6 mx-auto mt-5 text-white">
+          <p class="lead">
+            You are at the right step now
+          </p>
+          <h2 class="text-white my-4 rtx-bold">
+            Purchase The Fury
+            <span class="text-yellow">&amp;</span>
+            Launch Your Beautiful Website Today
+          </h2>
+          <a href="https://wrapbootstrap.com/theme/fury-multipurpose-landing-solutions-WB059347H/?ref=echotheme"
+            class="btn btn btn-rounded btn-primary m-2 px-md-5 py-3">
+            Buy Now - $18
+          </a>
+        </div>
+        <!-- END col-md-6 mt-5-->
+      </div>
+      <!-- END row-->
+    </div>
+    <!-- END container-->
+  </section>
+
+  <footer>
+    <div class="container text-center p-4">
+      <p class="mb-0">
+        Made with
+        <i class="far fa-heart text-primary"></i>
+        love for you.
+      </p>
+    </div>
+  </footer>
+
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <script src="assets/js/vendors.bundle.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>

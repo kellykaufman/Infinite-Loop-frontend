@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="894.333" height="718.745" viewBox="0 0 894.333 718.745">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" x2="0.344" y2="0.898" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff6f41"/>
+      <stop offset="1" stop-color="#fc3997"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.079" y1="1" x2="0.849" y2="0.135" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_48" data-name="Group 48" transform="translate(-1025.333 -0.228)">
+    <path id="Path_2" data-name="Path 2" d="M508.008,2080.333S378.629,2262.385,489.679,2382.5s177.627,102.957,221.831,268.117,320.213,205.914,406.466,53.623S1339,2608.793,1339,2608.793v-528.46Z" transform="translate(580.668 -2080.105)" fill="url(#linear-gradient)"/>
+    <path id="Intersection_2" data-name="Intersection 2" d="M574.845,507.286C536.7,364.767,481.9,358.012,396.239,281.656,441.7,143.644,571.667,44.007,724.9,44.007c191.065,0,345.954,154.889,345.954,345.954a346.423,346.423,0,0,1-11.071,87.155c-27.284,15.773-54.72,41.853-78.473,83.792-36.819,65.01-108.194,94.843-181.378,94.836C701.678,655.736,600.18,601.943,574.845,507.286Z" transform="translate(717.333 63.228)" fill="#fff" opacity="0.06"/>
+    <path id="Intersection_3" data-name="Intersection 3" d="M574.845,507.286C548.429,408.587,514.02,375,466.908,338.311,508.865,236.873,608.8,165.5,725.395,165.5,879.818,165.5,1005,290.685,1005,445.107a278.465,278.465,0,0,1-29.92,125.977c-38.268,57.951-105.9,84.667-175.148,84.661C701.678,655.736,600.18,601.943,574.845,507.286Z" transform="translate(707.333 63.228)" fill="#fff" opacity="0.05"/>
+    <path id="Intersection_4" data-name="Intersection 4" d="M574.845,507.286c-9.751-36.431-20.59-63.992-32.755-86.111A203.8,203.8,0,0,1,725.257,306.812c112.545,0,203.781,91.236,203.781,203.781a202.99,202.99,0,0,1-48.563,132.045,245.855,245.855,0,0,1-80.541,13.107C701.678,655.736,600.18,601.943,574.845,507.286Z" transform="translate(717.333 63.228)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

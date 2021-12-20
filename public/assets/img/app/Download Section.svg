@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1922.057" height="600" viewBox="0 0 1922.057 600">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.85" y1="-0.092" x2="0.219" y2="1.045" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff6f41"/>
+      <stop offset="1" stop-color="#fc3997"/>
+    </linearGradient>
+    <filter id="Rectangle_27" x="391.77" y="414.08" width="211" height="86" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#676e8d" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_599" x="592.77" y="414.08" width="193" height="86" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-color="#676e8d" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Download_Section" data-name="Download Section" transform="translate(0.77 -5791.92)">
+    <g id="Group_47" data-name="Group 47" transform="translate(0 40)">
+      <path id="Path_1" data-name="Path 1" d="M0,39.273C726-173.735,666,420.007,1919.033-22.319c4.426,4.742.967,600,.967,600H0S.571,36.9,0,39.273Z" transform="translate(0 5774.239)" opacity="0.7" fill="url(#linear-gradient)"/>
+      <path id="Path_1-2" data-name="Path 1" d="M0,198.218c1272.4-456.685,1079.526,87.075,1918.033-42.293,4.426,4.976,0,414.592,0,414.592H0S.571,195.731,0,198.218Z" transform="translate(1 5781.403)" opacity="0.7" fill="url(#linear-gradient)"/>
+      <path id="Path_2" data-name="Path 2" d="M1920,98.485C1163.2-178.814,880,275.473.967,84.455c-4.426,4.865,1,489.636,1,489.636H1920S1919.43,96.053,1920,98.485Z" transform="translate(0 5777.829)" opacity="0.7" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -0.77, 5791.92)" filter="url(#Rectangle_27)">
+      <rect id="Rectangle_27-2" data-name="Rectangle 27" width="181" height="56" rx="28" transform="translate(406.77 424.08)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -0.77, 5791.92)" filter="url(#Rectangle_599)">
+      <rect id="Rectangle_599-2" data-name="Rectangle 599" width="163" height="56" rx="28" transform="translate(607.77 424.08)" fill="#272b41"/>
+    </g>
+    <text id="Google_Play" data-name="Google Play" transform="translate(469 6250)" fill="#272b41" font-size="16" font-family="ProductSans-Bold, Product Sans" font-weight="700"><tspan x="0" y="0">Google Play</tspan></text>
+    <text id="App_Store" data-name="App Store" transform="translate(667 6250)" fill="#fff" font-size="16" font-family="ProductSans-Bold, Product Sans" font-weight="700"><tspan x="0" y="0">App Store</tspan></text>
+    <g id="google-play" transform="translate(423.741 6232)">
+      <path id="Path_61" data-name="Path 61" d="M12.36,13.689a2.492,2.492,0,0,0-.1.694V35.636a2.527,2.527,0,0,0,.1.686l11.928-11.3Z" transform="translate(0 -12.508)" fill="#349886"/>
+      <path id="Path_62" data-name="Path 62" d="M41.551,8.1,27.624.356A2.04,2.04,0,0,0,26.06.05L38.038,11.432Z" transform="translate(-12.61 0)" fill="#3db39e"/>
+      <path id="Path_63" data-name="Path 63" d="M185.444,105.129l-3.717-2.068-3.807,3.606,3.878,3.687,3.617-1.986A1.756,1.756,0,0,0,185.444,105.129Z" transform="translate(-151.369 -94.17)" fill="#f4b459"/>
+      <path id="Path_64" data-name="Path 64" d="M25.65,168.761a2.021,2.021,0,0,0,1.6-.294l13.969-7.67-3.576-3.4Z" transform="translate(-12.236 -143.821)" fill="#e2574c"/>
+    </g>
+    <g id="apple" transform="translate(589.452 6232)">
+      <path id="Path_65" data-name="Path 65" d="M64.55,13.283a5.656,5.656,0,0,1,2.7-4.76,5.838,5.838,0,0,0-4.571-2.477c-1.947-.2-3.8,1.146-4.787,1.146S55.38,6.075,53.766,6.1a6.117,6.117,0,0,0-5.171,3.134c-2.2,3.826-.565,9.493,1.584,12.6,1.05,1.519,2.3,3.225,3.946,3.164,1.583-.063,2.182-1.024,4.1-1.024s2.452,1.024,4.127.993c1.7-.032,2.783-1.548,3.826-3.071A13.785,13.785,0,0,0,67.9,18.341,5.522,5.522,0,0,1,64.55,13.283ZM61.4,3.992A5.51,5.51,0,0,0,62.7,0a5.6,5.6,0,0,0-3.682,1.893,5.241,5.241,0,0,0-1.328,3.868A4.637,4.637,0,0,0,61.4,3.992Z" fill="#fff"/>
+    </g>
+    <text id="Download_Fury_App_Now_" data-name="Download Fury App Now!" transform="translate(406 6095)" fill="#fff" font-size="36" font-family="ProductSans-Bold, Product Sans" font-weight="700"><tspan x="0" y="0">Download Fury App Now!</tspan></text>
+    <text id="Nam_liber_tempor_cum_soluta_nobis_eleifend_option_congue_isnihil_imper_iper_tem_por_legere_me_that_doming." data-name="Nam liber tempor cum soluta nobis eleifend option congue isnihil 
+imper iper tem por legere me that doming." transform="translate(406 6124)" fill="#fff" font-size="18" font-family="ProductSans-Regular, Product Sans" opacity="0.9"><tspan x="0" y="17">Nam liber tempor cum soluta nobis eleifend option congue isnihil </tspan><tspan x="0" y="47">imper iper tem por legere me that doming.</tspan></text>
+  </g>
+</svg>

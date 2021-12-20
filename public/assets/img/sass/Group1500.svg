@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="957.962" height="255.122" viewBox="0 0 957.962 255.122">
+  <g id="Group_1500" data-name="Group 1500" transform="translate(-454.977 -5015)">
+    <g id="Ellipse_30" data-name="Ellipse 30" transform="translate(536 5043)" fill="none" stroke="#933afe" stroke-width="5">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="9.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_31" data-name="Ellipse 31" cx="10" cy="10" r="10" transform="translate(1050 5015)" fill="#06df99"/>
+    <rect id="Rectangle_616" data-name="Rectangle 616" width="20" height="20" rx="2" transform="translate(627.878 5250.716) rotate(-14)" fill="#fd4f49"/>
+    <g id="two-quotes" transform="translate(1412.939 5074) rotate(180)">
+      <g id="Group_62" data-name="Group 62" transform="translate(0 5)">
+        <path id="Path_76" data-name="Path 76" d="M5.743,5A5.828,5.828,0,0,0,0,10.909a5.828,5.828,0,0,0,5.743,5.909c5.743,0,1.914,11.424-5.743,11.424V31C13.666,31,19.022,5,5.743,5ZM22.289,5a5.828,5.828,0,0,0-5.743,5.909,5.828,5.828,0,0,0,5.743,5.909c5.743,0,1.914,11.424-5.743,11.424V31C30.211,31,35.567,5,22.289,5Z" transform="translate(0 -5)" fill="#fc3997"/>
+      </g>
+    </g>
+    <path id="Union_1" data-name="Union 1" d="M315.321-45.428v-4.393h-4.393A2.929,2.929,0,0,1,308-52.75a2.929,2.929,0,0,1,2.929-2.929h4.393v-4.393A2.929,2.929,0,0,1,318.25-63a2.929,2.929,0,0,1,2.929,2.929v4.393h4.393A2.929,2.929,0,0,1,328.5-52.75a2.929,2.929,0,0,1-2.929,2.929h-4.393v4.393A2.929,2.929,0,0,1,318.25-42.5,2.929,2.929,0,0,1,315.321-45.428Z" transform="translate(1033.012 5450.558) rotate(-30)" fill="#16cffc"/>
+    <path id="Path_78" data-name="Path 78" d="M446.536,5271.206c2.612-3.719,18.154-3.719,20.722,0s-5.269,14.877-10.449,14.877S443.924,5274.925,446.536,5271.206Z" transform="matrix(0.695, -0.719, 0.719, 0.695, -3644.63, 1894.604)" fill="#ff8f1e"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1485.275" height="208.878" viewBox="0 0 1485.275 208.878">
+  <g id="Group_2849" data-name="Group 2849" transform="translate(-182.977 -5768.874)">
+    <g id="Ellipse_30" data-name="Ellipse 30" transform="translate(444 5771)" fill="none" stroke="#933afe" stroke-width="5">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="9.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_616" data-name="Rectangle 616" width="20" height="20" rx="2" transform="translate(362.878 5931.716) rotate(-14)" fill="#fd4f49"/>
+    <path id="Path_78" data-name="Path 78" d="M446.536,5271.206c2.612-3.719,18.154-3.719,20.722,0s-5.269,14.877-10.449,14.877S443.924,5274.925,446.536,5271.206Z" transform="matrix(0.695, -0.719, 0.719, 0.695, -3916.63, 2534.604)" fill="#ff8f1e"/>
+    <path id="Path_3571" data-name="Path 3571" d="M446.536,5271.206c2.612-3.719,18.154-3.719,20.722,0s-5.269,14.877-10.449,14.877S443.924,5274.925,446.536,5271.206Z" transform="matrix(0.695, -0.719, 0.719, 0.695, -2542.63, 2445.604)" fill="#ff8f1e"/>
+    <circle id="Ellipse_31" data-name="Ellipse 31" cx="10" cy="10" r="10" transform="translate(1356 5869)" fill="#06df99"/>
+    <path id="Union_1" data-name="Union 1" d="M315.321-45.428v-4.393h-4.393A2.929,2.929,0,0,1,308-52.75a2.929,2.929,0,0,1,2.929-2.929h4.393v-4.393A2.929,2.929,0,0,1,318.25-63a2.929,2.929,0,0,1,2.929,2.929v4.393h4.393A2.929,2.929,0,0,1,328.5-52.75a2.929,2.929,0,0,1-2.929,2.929h-4.393v4.393A2.929,2.929,0,0,1,318.25-42.5,2.929,2.929,0,0,1,315.321-45.428Z" transform="translate(1405.012 6168.558) rotate(-30)" fill="#16cffc"/>
+  </g>
+</svg>
