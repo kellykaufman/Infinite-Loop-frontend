@@ -1,5 +1,27 @@
 <template>
   <div class="chart-index">
+    <section class="pt-6 pb-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mt-6">
+            <article class="card shadow-lg">
+              <img class="card-img-top" src="/assets/img/blog/Union7.jpg" />
+              <div class="card-body">
+                <p class="text-primary"><a href="#">PHP & My SQL</a></p>
+                <h4>
+                  <a href="blog-details.html"
+                    >Expand Your Programming Knowledge</a
+                  >
+                </h4>
+                <p>
+                  28 Dec, 2019 - by <a href="#" class="text-primary"> Alex</a>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
     <div v-for="anxieties in anxieties" :key="anxieties.id">
       <div>{{ anxieties }}</div>
       <router-link v-bind:to="`/edit-anxieties/${anxieties.id}`">
