@@ -1,38 +1,40 @@
 <template>
   <div class="chart-index">
-    <form v-on:submit.prevent="createAnxiety()">
-      <ul>
-        <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
-      </ul>
-      <div>
-        <label>Life theme: </label>
-        <input type="text" v-model="newAnxietyParams.life_theme" />
-      </div>
-
-      <div>
-        <label> Intrusive thought or feeling: </label>
-        <input
-          type="text"
-          v-model="newAnxietyParams.intrusive_thought_or_feeling"
-        />
-      </div>
-      <div>
-        <label>Anxiety theme: </label>
-        <input type="text" v-model="newAnxietyParams.anxiety_theme" />
-      </div>
-      <div>
-        <label> Opposite Action: </label>
-        <input type="text" v-model="newAnxietyParams.opposite_action" />
-      </div>
-      <div>
-        <label>Timer: </label>
-        <input type="text" v-model="newAnxietyParams.timer" />
-      </div>
-      <!-- Do I add user_id ? -->
-      <input type="submit" value="Submit" />
-    </form>
     <section class="pt-6 pb-10">
       <div class="container">
+        <br />
+        <br />
+        <form v-on:submit.prevent="createAnxiety()">
+          <ul>
+            <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+          </ul>
+          <div>
+            <label>Life theme: </label>
+            <input type="text" v-model="newAnxietyParams.life_theme" />
+          </div>
+
+          <div>
+            <label> Intrusive thought or feeling: </label>
+            <input
+              type="text"
+              v-model="newAnxietyParams.intrusive_thought_or_feeling"
+            />
+          </div>
+          <div>
+            <label>Anxiety theme: </label>
+            <input type="text" v-model="newAnxietyParams.anxiety_theme" />
+          </div>
+          <div>
+            <label> Opposite Action: </label>
+            <input type="text" v-model="newAnxietyParams.opposite_action" />
+          </div>
+          <div>
+            <label>Timer: </label>
+            <input type="text" v-model="newAnxietyParams.timer" />
+          </div>
+          <!-- Do I add user_id ? -->
+          <input type="submit" value="Submit" />
+        </form>
         <div class="row">
           <div v-for="anxieties in anxieties" :key="anxieties.id">
             <div class="col-lg-10 col-md-8 mt-10">
@@ -71,6 +73,9 @@
                     Progress:
                     <span class="user-input">{{ anxieties.progress }}</span>
                   </div>
+                  <router-link v-bind:to="`/edit-anxieties/${anxieties.id}`">
+                    <button>Edit</button>
+                  </router-link>
                 </div>
               </article>
             </div>
@@ -78,12 +83,6 @@
         </div>
       </div>
     </section>
-    <div v-for="anxieties in anxieties" :key="anxieties.id">
-      <div>{{ anxieties }}</div>
-      <router-link v-bind:to="`/edit-anxieties/${anxieties.id}`">
-        <button>Edit</button>
-      </router-link>
-    </div>
   </div>
 </template>
 
