@@ -98,6 +98,17 @@
   font-weight: normal;
   font-size: 10pt;
 }
+
+.chart-index {
+  margin-top: 100px;
+
+  /* Google fonts: Font-Family */
+  background-image: linear-gradient(
+    to left,
+    rgba(22, 22, 137, 0.635),
+    rgb(125, 77, 161)
+  );
+}
 </style>
 
 <script>

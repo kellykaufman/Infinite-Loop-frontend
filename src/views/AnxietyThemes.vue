@@ -136,10 +136,30 @@
 </template>
 
 <style>
-.anxiety-themes {
-  margin-top: 100px;
+p {
   font-family: Verdana;
   font-style: normal;
+  color: white;
+}
+
+html {
+  margin-top: 100px;
+
   /* Google fonts: Font-Family */
+  background-image: linear-gradient(
+    to left,
+    rgba(68, 18, 154, 0.635),
+    rgb(125, 77, 161)
+  );
+}
+.anxiety-themes {
+  margin-top: 100px;
+
+  /* Google fonts: Font-Family */
+  background-image: linear-gradient(
+    to left,
+    rgba(22, 22, 137, 0.635),
+    rgb(125, 77, 161)
+  );
 }
 </style>
