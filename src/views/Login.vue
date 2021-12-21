@@ -1,5 +1,5 @@
 <template>
-  <div class="login">
+  <div class="container login">
     <form v-on:submit.prevent="submit()">
       <h1>Login</h1>
       <ul>
@@ -13,7 +13,12 @@
         <label>Password:</label>
         <input type="password" v-model="newSessionParams.password" />
       </div>
-      <input type="submit" value="Submit" />
+      <br />
+      <input
+        class="btn btn-primary-gradient btn-sm"
+        type="submit"
+        value="Submit"
+      />
     </form>
   </div>
 </template>
