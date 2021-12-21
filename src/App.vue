@@ -55,10 +55,10 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="docs/alerts.html">Components</a>
+                <a class="nav-link" href="/signup">Signup</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="docs/index.html">Documentation</a>
+                <a class="nav-link" href="/login">Login</a>
               </li>
               <li class="nav-item">
                 <a
