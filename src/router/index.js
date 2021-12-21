@@ -5,6 +5,7 @@ import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
 import EditAnxieties from "../views/EditAnxieties.vue";
+import AnxietyThemes from "../views/AnxietyThemes.vue";
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,14 @@ const routes = [
     name: "signup",
     // This is the name of the file:
     component: Signup,
+  },
+  {
+    //You declare this:
+    path: "/anxiety-themes",
+    // Comes from div class:
+    name: "anxiety-themes",
+    // This is the name of the file:
+    component: AnxietyThemes,
   },
   {
     path: "/login",
