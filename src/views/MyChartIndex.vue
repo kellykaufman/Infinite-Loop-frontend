@@ -1,35 +1,5 @@
 <template>
   <div class="chart-index">
-    <section class="pt-6 pb-10">
-      <div class="container">
-        <div class="row">
-          <div v-for="anxieties in anxieties" :key="anxieties.id">
-            <div class="col-lg-4 col-md-6 mt-6">
-              <article class="card shadow-lg">
-                <img class="card-img-top" src="/assets/img/blog/Union7.jpg" />
-                <div class="card-body">
-                  <p class="text-primary"><a href="#">PHP & My SQL</a></p>
-                  <h4>
-                    <a href="blog-details.html"
-                      >Expand Your Programming Knowledge</a
-                    >
-                  </h4>
-                  <p>
-                    28 Dec, 2019 - by <a href="#" class="text-primary"> Alex</a>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div v-for="anxieties in anxieties" :key="anxieties.id">
-      <div>{{ anxieties }}</div>
-      <router-link v-bind:to="`/edit-anxieties/${anxieties.id}`">
-        <button>Edit</button>
-      </router-link>
-    </div>
     <form v-on:submit.prevent="createAnxiety()">
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
@@ -61,10 +31,75 @@
       <!-- Do I add user_id ? -->
       <input type="submit" value="Submit" />
     </form>
+    <section class="pt-6 pb-10">
+      <div class="container">
+        <div class="row">
+          <div v-for="anxieties in anxieties" :key="anxieties.id">
+            <div class="col-lg-10 col-md-8 mt-10">
+              <article class="card shadow-lg">
+                <img class="card-img-top" src="/assets/img/blog/Union7.jpg" />
+                <div class="card-body">
+                  <!-- <p class="text-primary"><a href="#">PHP & My SQL</a></p> -->
+
+                  <div>
+                    Life theme:
+                    <span class="user-input">{{ anxieties.life_theme }}</span>
+                  </div>
+                  <div>
+                    Intrusive thought OR feeling:
+                    <span class="user-input">{{
+                      anxieties.intrusive_thought_or_feeling
+                    }}</span>
+                  </div>
+                  <div>
+                    Anxiety Theme:
+                    <span class="user-input">{{
+                      anxieties.anxiety_theme
+                    }}</span>
+                  </div>
+                  <div>
+                    Opposite Action:
+                    <span class="user-input">{{
+                      anxieties.opposite_action
+                    }}</span>
+                  </div>
+                  <div>
+                    Timer:
+                    <span class="user-input">{{ anxieties.timer }}</span>
+                  </div>
+                  <div>
+                    Progress:
+                    <span class="user-input">{{ anxieties.progress }}</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div v-for="anxieties in anxieties" :key="anxieties.id">
+      <div>{{ anxieties }}</div>
+      <router-link v-bind:to="`/edit-anxieties/${anxieties.id}`">
+        <button>Edit</button>
+      </router-link>
+    </div>
   </div>
 </template>
 
-<style></style>
+<style>
+.card-body {
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 13pt;
+}
+
+.user-input {
+  color: blueviolet;
+  font-weight: normal;
+  font-size: 10pt;
+}
+</style>
 
 <script>
 import axios from "axios";
