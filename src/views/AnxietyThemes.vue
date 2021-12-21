@@ -8,6 +8,7 @@
           <p><b>EXAMPLE:</b> “Everybody has to like me.”</p>
         </span>
       </p>
+      <hr />
       <p>
         <b> 2. Catastrophizing: </b>
         <span>
@@ -19,6 +20,7 @@
           </p>
         </span>
       </p>
+      <hr />
       <p>
         <b> 3. Magnifying: </b>
         <span>
@@ -30,6 +32,7 @@
           </p>
         </span>
       </p>
+      <hr />
       <p>
         <b> 4. Discounting or minimizing the positive: </b>
         <span>
@@ -42,6 +45,7 @@
           </p>
         </span>
       </p>
+      <hr />
       <p>
         <b> 5. Emotional Reasoning: </b>
         <span>
@@ -53,6 +57,7 @@
           </p>
         </span>
       </p>
+      <hr />
       <p>
         <b> 6. Labeling: </b>
         <span>
@@ -62,6 +67,7 @@
           <p><b>EXAMPLE:</b> “I am a social basket case – a “freak.”</p>
         </span>
       </p>
+      <hr />
       <p>
         <b> 7. Selective Abstraction / Tunnel Vision: </b>
         <span>
@@ -74,6 +80,7 @@
           </p>
         </span>
       </p>
+      <hr />
       <p>
         <b> 8. "Should" and "Must" statements (perfectionism): </b>
         <span>
@@ -85,6 +92,7 @@
           </p>
         </span>
       </p>
+      <hr />
       <p>
         <b> 9. Comparison: </b>
         <span>
@@ -97,6 +105,7 @@
           </p>
         </span>
       </p>
+      <hr />
       <p>
         <b> 10. Mind reading: </b>
         <span>
@@ -109,6 +118,7 @@
           </p>
         </span>
       </p>
+      <hr />
       <p>
         <b> 11. Personalization: </b>
         <span>
