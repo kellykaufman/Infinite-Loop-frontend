@@ -62,7 +62,6 @@
 .signup {
   text-align: center;
 }
-
 .center-pretty {
   text-align: center;
   margin-left: 350px;
@@ -76,6 +75,17 @@
 .image {
   height: 150px;
   width: 150px;
+}
+
+html {
+  margin-top: 50px;
+
+  /* Google fonts: Font-Family */
+  background-image: linear-gradient(
+    to left,
+    rgba(68, 18, 154, 0.635),
+    rgb(125, 77, 161)
+  );
 }
 </style>
 

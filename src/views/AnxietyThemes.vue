@@ -148,7 +148,7 @@ html {
   /* Google fonts: Font-Family */
   background-image: linear-gradient(
     to left,
-    rgba(68, 18, 154, 0.635),
+    rgba(46, 46, 173, 0.635),
     rgb(125, 77, 161)
   );
 }
@@ -158,7 +158,7 @@ html {
   /* Google fonts: Font-Family */
   background-image: linear-gradient(
     to left,
-    rgba(22, 22, 137, 0.635),
+    rgba(46, 46, 173, 0.635),
     rgb(125, 77, 161)
   );
 }

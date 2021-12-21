@@ -33,7 +33,7 @@
           </button>
           <div class="navbar-collapse collapse" id="IDtoggleNavigation">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
+              <li class="nav-item" v-if="isLoggedIn()">
                 <a
                   class="nav-link"
                   href="/chart-index"
@@ -43,7 +43,7 @@
                   My Chart
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" v-if="isLoggedIn()">
                 <a
                   class="nav-link"
                   href="/anxiety-themes"
@@ -54,16 +54,15 @@
                 </a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item" v-if="!isLoggedIn()">
                 <a class="nav-link" href="/signup">Signup</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" v-if="!isLoggedIn()">
                 <a class="nav-link" href="/login">Login</a>
               </li>
+
               <li class="nav-item">
-                <a
-                  class="btn btn-primary-gradient btn-sm"
-                  href="https://wrapbootstrap.com/theme/fury-multipurpose-landing-solutions-WB059347H?ref=echotheme"
+                <a class="btn btn-primary-gradient btn-sm" v-on:click="logout()"
                   >Logout</a
                 >
               </li>
@@ -73,25 +72,6 @@
       </nav>
     </header>
 
-    <!-- <div id="nav"> -->
-
-    <!-- <router-link v-if="isLoggedIn() === true" to="/chart-index"
-        >My Chart |</router-link
-      >
-
-      <router-link v-if="isLoggedIn() === false" to="/signup"
-        >Signup
-      </router-link>
-
-      <router-link v-if="isLoggedIn() === false" to="/login"
-        >| Login</router-link
-      >
-
-      <router-link v-if="isLoggedIn() === true" to="/logout"
-        >Logout</router-link
-      >
-    </div>
-    </div> -->
     <router-view />
     <footer>
       <div class="container text-center p-4">
@@ -106,6 +86,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data: function () {
     return {
@@ -122,6 +104,11 @@ export default {
     },
     getUserId: function () {
       return localStorage.getItem("user_id");
+    },
+    logout: function () {
+      delete axios.defaults.headers.common["Authorization"];
+      localStorage.removeItem("jwt");
+      this.$router.push("/");
     },
   },
 };

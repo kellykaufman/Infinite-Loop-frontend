@@ -3,7 +3,6 @@ import VueRouter from "vue-router";
 import MyChartIndex from "../views/MyChartIndex.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
-import Logout from "../views/Logout.vue";
 import EditAnxieties from "../views/EditAnxieties.vue";
 import AnxietyThemes from "../views/AnxietyThemes.vue";
 
@@ -31,8 +30,6 @@ const routes = [
     name: "login",
     component: Login,
   },
-
-  { path: "/logout", name: "logout", component: Logout },
 
   {
     //You declare this:

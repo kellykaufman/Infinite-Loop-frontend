@@ -32,14 +32,17 @@
             <label>Timer: </label>
             <input type="text" v-model="newAnxietyParams.timer" />
           </div>
-          <!-- Do I add user_id ? -->
-          <input type="submit" value="Submit" />
+          <br />
+          <input
+            type="submit"
+            value="Submit"
+            class="btn btn-primary-gradient btn-sm"
+          />
         </form>
         <div class="row">
           <div v-for="anxieties in anxieties" :key="anxieties.id">
             <div class="col-lg-10 col-md-8 mt-10">
               <article class="card shadow-lg">
-                <img class="card-img-top" src="/assets/img/blog/Union7.jpg" />
                 <div class="card-body">
                   <!-- <p class="text-primary"><a href="#">PHP & My SQL</a></p> -->
 
@@ -74,7 +77,10 @@
                     <span class="user-input">{{ anxieties.progress }}</span>
                   </div>
                   <router-link v-bind:to="`/edit-anxieties/${anxieties.id}`">
-                    <button>Edit</button>
+                    <br />
+                    <button class="btn btn-primary-gradient btn-sm">
+                      Edit
+                    </button>
                   </router-link>
                 </div>
               </article>
@@ -100,7 +106,7 @@
 }
 
 .chart-index {
-  margin-top: 100px;
+  margin-top: 50px;
 
   /* Google fonts: Font-Family */
   background-image: linear-gradient(
