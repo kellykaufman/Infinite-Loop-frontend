@@ -75,10 +75,10 @@
   /* margin-left: 350px; */
 }
 
-/* .please-work {
+.please-work {
   text-align: left;
-  margin-left: 20px;
-} */
+  margin-left: 13px;
+}
 
 .image {
   height: 150px;
