@@ -100,6 +100,7 @@
   color: white;
   border-style: dotted;
   border-color: white;
+  width: 500px;
   padding-left: 50px;
   padding-bottom: 25px;
 }
