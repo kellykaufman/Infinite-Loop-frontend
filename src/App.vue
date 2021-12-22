@@ -58,7 +58,7 @@
                 <a class="nav-link" href="/signup">Signup</a>
               </li>
               <li class="nav-item" v-if="!isLoggedIn()">
-                <a class="nav-link" href="/login">Login</a>
+                <a class="nav-link" href="/">Login</a>
               </li>
 
               <li class="nav-item">

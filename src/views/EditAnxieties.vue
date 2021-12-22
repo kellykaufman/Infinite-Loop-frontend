@@ -4,45 +4,49 @@
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
-      <div>
-        <label>Life theme: </label>
-        <input type="text" v-model="currentAnxietyParams.life_theme" />
-      </div>
+      <div class="create-border">
+        <br />
+        <div>
+          <label>Life theme: </label>
+          <input type="text" v-model="currentAnxietyParams.life_theme" />
+        </div>
 
-      <div>
-        <label> Intrusive thought or feeling: </label>
+        <div>
+          <label> Intrusive thought or feeling: </label>
+          <input
+            type="text"
+            v-model="currentAnxietyParams.intrusive_thought_or_feeling"
+          />
+        </div>
+        <div>
+          <label>Anxiety theme: </label>
+          <input type="text" v-model="currentAnxietyParams.anxiety_theme" />
+        </div>
+        <div>
+          <label> Opposite Action: </label>
+          <input type="text" v-model="currentAnxietyParams.opposite_action" />
+        </div>
+        <div>
+          <label>Timer: </label>
+          <input type="text" v-model="currentAnxietyParams.timer" />
+        </div>
+        <br />
         <input
-          type="text"
-          v-model="currentAnxietyParams.intrusive_thought_or_feeling"
+          class="btn btn-primary-gradient btn-sm"
+          type="submit"
+          value="Update"
         />
+        <br />
+        <br />
+        <button
+          class="btn btn-primary-gradient btn-sm"
+          v-on:click="deleteAnxieties()"
+        >
+          Delete
+        </button>
+        <br />
       </div>
-      <div>
-        <label>Anxiety theme: </label>
-        <input type="text" v-model="currentAnxietyParams.anxiety_theme" />
-      </div>
-      <div>
-        <label> Opposite Action: </label>
-        <input type="text" v-model="currentAnxietyParams.opposite_action" />
-      </div>
-      <div>
-        <label>Timer: </label>
-        <input type="text" v-model="currentAnxietyParams.timer" />
-      </div>
-      <br />
-
-      <input
-        class="btn btn-primary-gradient btn-sm"
-        type="submit"
-        value="Update"
-      />
     </form>
-    <br />
-    <button
-      class="btn btn-primary-gradient btn-sm"
-      v-on:click="deleteAnxieties()"
-    >
-      Delete
-    </button>
   </div>
 </template>
 
@@ -92,6 +96,15 @@ export default {
 </script>
 
 <style>
+.create-border {
+  color: white;
+  border-style: dotted;
+  border-color: white;
+  width: 500px;
+  padding-left: 50px;
+  padding-bottom: 25px;
+}
+
 .edit-anxiety {
   margin-top: 100px;
   color: white;
