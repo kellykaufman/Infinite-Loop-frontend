@@ -6,13 +6,15 @@
         <ul>
           <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
         </ul>
-        <div>
-          <label>Email:</label>
-          <input type="email" v-model="newSessionParams.email" />
-        </div>
-        <div>
-          <label>Password:</label>
-          <input type="password" v-model="newSessionParams.password" />
+        <div class="login-text">
+          <div>
+            <label>Email:</label>
+            <input type="email" v-model="newSessionParams.email" />
+          </div>
+          <div>
+            <label>Password:</label>
+            <input type="password" v-model="newSessionParams.password" />
+          </div>
         </div>
         <br />
         <input
@@ -57,6 +59,10 @@ export default {
 </script>
 
 <style>
+.login-text {
+  text-align: center;
+}
+
 .container-login {
   margin-top: 100px;
   color: white;

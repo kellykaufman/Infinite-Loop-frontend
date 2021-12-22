@@ -26,7 +26,7 @@ const routes = [
     component: AnxietyThemes,
   },
   {
-    path: "/login",
+    path: "/",
     name: "login",
     component: Login,
   },
