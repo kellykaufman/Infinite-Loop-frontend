@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="edit-anxiety">
     <form v-on:submit.prevent="editAnxieties()">
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
@@ -28,11 +28,21 @@
         <label>Timer: </label>
         <input type="text" v-model="currentAnxietyParams.timer" />
       </div>
-      <!-- Do I add user_id ? -->
-      <input type="submit" value="Update" />
+      <br />
+
+      <input
+        class="btn btn-primary-gradient btn-sm"
+        type="submit"
+        value="Update"
+      />
     </form>
     <br />
-    <button v-on:click="deleteAnxieties()">Delete</button>
+    <button
+      class="btn btn-primary-gradient btn-sm"
+      v-on:click="deleteAnxieties()"
+    >
+      Delete
+    </button>
   </div>
 </template>
 
@@ -80,3 +90,18 @@ export default {
   },
 };
 </script>
+
+<style>
+.edit-anxiety {
+  margin-top: 100px;
+  color: white;
+  padding-left: 75px;
+
+  /* Google fonts: Font-Family */
+  background-image: linear-gradient(
+    to left,
+    rgba(46, 46, 173, 0.635),
+    rgb(125, 77, 161)
+  );
+}
+</style>

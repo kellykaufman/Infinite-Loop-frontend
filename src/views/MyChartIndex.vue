@@ -4,41 +4,43 @@
       <div class="container">
         <br />
         <br />
-        <form v-on:submit.prevent="createAnxiety()">
-          <ul>
-            <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
-          </ul>
-          <div>
-            <label>Life theme: </label>
-            <input type="text" v-model="newAnxietyParams.life_theme" />
-          </div>
+        <div class="create-border">
+          <form v-on:submit.prevent="createAnxiety()">
+            <ul>
+              <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+            </ul>
+            <div>
+              <label>Life theme: </label>
+              <input type="text" v-model="newAnxietyParams.life_theme" />
+            </div>
 
-          <div>
-            <label> Intrusive thought or feeling: </label>
+            <div>
+              <label> Intrusive thought or feeling: </label>
+              <input
+                type="text"
+                v-model="newAnxietyParams.intrusive_thought_or_feeling"
+              />
+            </div>
+            <div>
+              <label>Anxiety theme: </label>
+              <input type="text" v-model="newAnxietyParams.anxiety_theme" />
+            </div>
+            <div>
+              <label> Opposite Action: </label>
+              <input type="text" v-model="newAnxietyParams.opposite_action" />
+            </div>
+            <div>
+              <label>Timer: </label>
+              <input type="text" v-model="newAnxietyParams.timer" />
+            </div>
+            <br />
             <input
-              type="text"
-              v-model="newAnxietyParams.intrusive_thought_or_feeling"
+              type="submit"
+              value="Submit"
+              class="btn btn-primary-gradient btn-sm"
             />
-          </div>
-          <div>
-            <label>Anxiety theme: </label>
-            <input type="text" v-model="newAnxietyParams.anxiety_theme" />
-          </div>
-          <div>
-            <label> Opposite Action: </label>
-            <input type="text" v-model="newAnxietyParams.opposite_action" />
-          </div>
-          <div>
-            <label>Timer: </label>
-            <input type="text" v-model="newAnxietyParams.timer" />
-          </div>
-          <br />
-          <input
-            type="submit"
-            value="Submit"
-            class="btn btn-primary-gradient btn-sm"
-          />
-        </form>
+          </form>
+        </div>
         <div class="row">
           <div v-for="anxieties in anxieties" :key="anxieties.id">
             <div class="col-lg-10 col-md-8 mt-10">
@@ -50,6 +52,7 @@
                     Life theme:
                     <span class="user-input">{{ anxieties.life_theme }}</span>
                   </div>
+
                   <div>
                     Intrusive thought OR feeling:
                     <span class="user-input">{{
@@ -93,6 +96,14 @@
 </template>
 
 <style>
+.create-border {
+  color: white;
+  border-style: dotted;
+  border-color: white;
+  padding-left: 50px;
+  padding-bottom: 25px;
+}
+
 .card-body {
   color: blueviolet;
   font-weight: bold;
