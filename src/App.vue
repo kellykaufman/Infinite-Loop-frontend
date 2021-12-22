@@ -8,12 +8,12 @@
           <a class="navbar-brand" href="index.html">
             <img
               class="site-logo-default"
-              src="assets/img/logo/logo-white.png"
+              src="./assets/infinite-loop-logo.png"
               alt="Site Logo"
             />
             <img
               class="site-logo-inverse"
-              src="assets/img/logo/logo-pink.png"
+              src="./assets/infinite-loop-logo.png"
               alt="Site Logo"
             />
           </a>
