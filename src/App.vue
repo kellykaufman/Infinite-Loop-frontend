@@ -5,7 +5,7 @@
     >
       <nav class="site-nav container">
         <div class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand">
             <img
               class="site-logo-default"
               src="./assets/infinite-loop-logo.png"
