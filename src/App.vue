@@ -73,7 +73,7 @@
     </header>
 
     <router-view />
-    <footer>
+    <!-- <footer>
       <div class="container text-center p-4">
         <p class="mb-0">
           Made with
@@ -81,7 +81,7 @@
           love for you.
         </p>
       </div>
-    </footer>
+    </footer> -->
   </div>
 </template>
 

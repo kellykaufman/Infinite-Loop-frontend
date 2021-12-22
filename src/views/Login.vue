@@ -1,24 +1,26 @@
 <template>
-  <div class="container login">
+  <div class="container-login">
     <form v-on:submit.prevent="submit()">
-      <h1>Login</h1>
-      <ul>
-        <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
-      </ul>
-      <div>
-        <label>Email:</label>
-        <input type="email" v-model="newSessionParams.email" />
+      <div class="center-pretty">
+        <img class="image" src="../assets/Loginphoto.png" alt="image" />
+        <ul>
+          <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+        </ul>
+        <div>
+          <label>Email:</label>
+          <input type="email" v-model="newSessionParams.email" />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input type="password" v-model="newSessionParams.password" />
+        </div>
+        <br />
+        <input
+          class="btn btn-primary-gradient btn-sm"
+          type="submit"
+          value="Submit"
+        />
       </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" v-model="newSessionParams.password" />
-      </div>
-      <br />
-      <input
-        class="btn btn-primary-gradient btn-sm"
-        type="submit"
-        value="Submit"
-      />
     </form>
   </div>
 </template>
@@ -53,3 +55,17 @@ export default {
   },
 };
 </script>
+
+<style>
+.container-login {
+  margin-top: 100px;
+  color: white;
+
+  /* Google fonts: Font-Family */
+  background-image: linear-gradient(
+    to left,
+    rgba(46, 46, 173, 0.635),
+    rgb(125, 77, 161)
+  );
+}
+</style>

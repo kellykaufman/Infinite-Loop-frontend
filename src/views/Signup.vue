@@ -61,10 +61,11 @@
 <style>
 .signup {
   text-align: center;
+  color: white;
 }
 .center-pretty {
   text-align: center;
-  margin-left: 350px;
+  /* margin-left: 350px; */
 }
 
 .please-work {
