@@ -1,8 +1,12 @@
 <template>
   <div class="container-login">
     <div class="dummy-account">
-      <label> <b>Example email:</b> winnie@ex.com </label><br />
-      <label> <b>Example password:</b> password</label>
+      <label>
+        <b><u>Example email:</u></b> winnie@ex.com </label
+      ><br />
+      <label>
+        <b><u>Example password:</u></b> password</label
+      >
     </div>
     <form v-on:submit.prevent="submit()">
       <div class="center-pretty">
