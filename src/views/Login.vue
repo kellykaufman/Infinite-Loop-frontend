@@ -1,7 +1,7 @@
 <template>
   <div class="container-login">
     <div class="dummy-account">
-      <label> Example email: winnie@ex.com </label>
+      <label> Example email: winnie@ex.com </label><b> </b>
       <label> Example password: password</label>
     </div>
     <form v-on:submit.prevent="submit()">
