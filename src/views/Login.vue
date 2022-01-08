@@ -1,5 +1,9 @@
 <template>
   <div class="container-login">
+    <div class="dummy-account">
+      <label> Example username: </label>
+      <label> Example password: </label>
+    </div>
     <form v-on:submit.prevent="submit()">
       <div class="center-pretty">
         <img class="image" src="../assets/Loginphoto.png" alt="image" />
@@ -59,6 +63,10 @@ export default {
 </script>
 
 <style>
+.dummy-account {
+  text-align: right;
+}
+
 .login-text {
   text-align: center;
 }
