@@ -68,7 +68,7 @@ export default {
 
 <style>
 .dummy-account {
-  position: relative;
+  text-align: right;
   right: 50px;
 }
 
