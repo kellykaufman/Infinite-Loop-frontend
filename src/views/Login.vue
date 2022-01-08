@@ -1,9 +1,9 @@
 <template>
   <div class="container-login">
-    <div class="dummy-account">
+    <!-- <div class="dummy-account">
       <label> Example email: winnie@ex.com </label>
       <label> Example password: password</label>
-    </div>
+    </div> -->
     <form v-on:submit.prevent="submit()">
       <div class="center-pretty">
         <img class="image" src="../assets/Loginphoto.png" alt="image" />
@@ -63,9 +63,9 @@ export default {
 </script>
 
 <style>
-.dummy-account {
+/* .dummy-account {
   text-align: right;
-}
+} */
 
 .login-text {
   text-align: center;
