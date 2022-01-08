@@ -69,6 +69,7 @@ export default {
 <style>
 .dummy-account {
   text-align: right(25px);
+  padding: 10px;
 }
 
 .login-text {
