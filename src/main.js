@@ -6,7 +6,7 @@ import axios from "axios";
 axios.defaults.baseURL =
   process.env.NODE_ENV === "development"
     ? "http://localhost:3000"
-    : "https://git.heroku.com/pacific-ridge-37259.git";
+    : "https://pacific-ridge-37259.herokuapp.com";
 
 var jwt = localStorage.getItem("jwt");
 if (jwt) {
