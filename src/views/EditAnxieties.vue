@@ -28,7 +28,7 @@
         </div>
         <div>
           <label>Timer: </label>
-          <input type="text" v-model="currentAnxietyParams.timer" />
+          <input type="number" v-model="currentAnxietyParams.timer" />
         </div>
         <div>
           <label>Progress: </label>
