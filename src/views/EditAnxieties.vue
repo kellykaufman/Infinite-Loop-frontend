@@ -32,7 +32,7 @@
         </div>
         <div>
           <label>Progress: </label>
-          <input type="text" v-model="currentAnxietyParams.timer" />
+          <input type="text" v-model="currentAnxietyParams.progress" />
         </div>
         <br />
         <input
