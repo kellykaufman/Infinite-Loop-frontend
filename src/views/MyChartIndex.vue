@@ -75,10 +75,6 @@
                     Timer:
                     <span class="user-input">{{ anxieties.timer }}</span>
                   </div>
-                  <div>
-                    Progress:
-                    <span class="user-input">{{ anxieties.progress }}</span>
-                  </div>
                   <router-link v-bind:to="`/edit-anxieties/${anxieties.id}`">
                     <br />
                     <button class="btn btn-primary-gradient btn-sm">

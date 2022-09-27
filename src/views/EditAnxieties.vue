@@ -30,10 +30,6 @@
           <label>Timer: </label>
           <input type="number" v-model="currentAnxietyParams.timer" />
         </div>
-        <div>
-          <label>Progress: </label>
-          <input type="text" v-model="currentAnxietyParams.progress" />
-        </div>
         <br />
         <input
           class="btn btn-primary-gradient btn-sm"
