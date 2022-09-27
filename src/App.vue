@@ -61,7 +61,7 @@
                 <a class="nav-link" href="/">Login</a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item" v-if="isLoggedIn()">
                 <a class="btn btn-primary-gradient btn-sm" v-on:click="logout()"
                   >Logout</a
                 >
